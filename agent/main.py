@@ -42,7 +42,7 @@ if __name__ == "__main__":
     print_embedding_distances(get_airport_embeddings_lazy(), get_aircraft_embeddings_lazy())
 
     with AgentRuntime() as runtime:
-        # esempio di prompt che esercita più tool
+        # esempio di prompt qui
         handle = runtime.start(
             flight_network_agent,
             "Dimmi le 3 rotte con scali che durano di più, specifica quanto durano i voli (inclusa durata scalo), e quali sono i velivoli usati su queste rotte. "
