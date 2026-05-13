@@ -3,7 +3,7 @@ from pathlib import Path
 from dotenv import load_dotenv
 load_dotenv(Path(__file__).resolve().parent.parent / ".env", override=True)
 from agentspan.agents import Agent, AgentRuntime
-# Import per stampa distanze embeddings (vedi sotto, dentro __main__)
+
 from network import get_airport_embeddings_lazy, get_aircraft_embeddings_lazy, ROUTE_NETWORK, print_route_network
 from embeddings import print_embedding_distances
 from tools import (list_routes_from, get_route_schedule, get_airport_centrality, find_connections, get_airline_network, get_aircraft_info, get_airport_embeddings, get_aircraft_embeddings)
